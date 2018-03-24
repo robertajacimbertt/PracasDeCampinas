@@ -1,1 +1,26 @@
-iiii
+header {
+    background-color: #00d1b2;
+    height: 50px;
+    font-size: 14pt;
+    color: white;
+}
+
+a:link,
+a:visited {
+    background-color: #00d1b2;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: #05c5a8d5;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
