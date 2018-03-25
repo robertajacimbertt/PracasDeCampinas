@@ -50,6 +50,19 @@ nav {
     color: #424242;
 }
 
+@media only screen and (max-width: 830px) {
+    nav {
+        display: block;
+    }
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        height: 200px;
+    }
+}
+
 
 /* FOOTER */
 
