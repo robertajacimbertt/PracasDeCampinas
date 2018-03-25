@@ -5,11 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contate-nos</title>
+    <!-- <link rel="icon" href="./images/park_logo.svg"> -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Contato: Praças de Campinas</title>
 </head>
 
 <body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="navbar-item navbar-logo">
+                    <img src="./images/park_logo.svg" alt="Imagem de Praça com árvore e banco" id="navbar-icon">
+                    <p id="navbar-logo-name">Nossa praça</p>
+                </div>
 
+                <div class="navbar-item navbar-links">
+                    <a class="navbar-link" href="./index.html">
+                        Encontre sua Praça!
+                    </a>
+                    <a class="navbar-link" href="./about.html">
+                        Conheça o projeto
+                    </a>
+                    <a class="navbar-link" href="./contact.html">
+                        Contate-nos
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div id="content-contact">
+            <div id="description-contact">
+                Estamos prontos para te ajudar!
+            </div>
+            <form action="" method="get">
+                <!-- NOME -->
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" placeholder="Nome Completo">
+                <br><br>
+                <!-- EMAIL -->
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="nome@domain.com">
+                <br><br>
+                <!-- CIDADE -->
+                <label for="motivo">Selecione qual o motivo do seu contato</label>
+                <br>
+                <select>
+  							<option value="novaPraca">Cadastro de nova praça</option>
+                            <option value="duvidas">Dúvidas</option>  
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="sugestoes">Sugestões</option>
+                            <option value="outros">Outros</option>
+						</select>
+                <br><br>
+                <!-- COMENTARIOS -->
+                <label for="motivo">Comentarios</label>
+                <br>
+                <textarea name="comentário" rows="10" cols="40"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar" id="submit-buttom">
+            </form>
+        </div>
+        <footer>
+            <div>
+                <img src="./images/park_logo.svg" alt="Imagem de Praça com árvore e banco" id="footer-icon">
+                <p id="footer-logo-name">Nossa praça</p>
+                <p id="licence">&copy; Open Source</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
