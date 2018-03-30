@@ -29,8 +29,6 @@
             { coordinate: [-22.8746352, -47.0436163], legend: "<b>Praça Arautos da Paz</b><br>Vila Nogueira, Campinas - SP, 13077-005" },
             { coordinate: [-22.9524272, -47.0339002], legend: "<b>Praça de Lazer</b><br>Jardim Antonio Von Zuben, Campinas - SP, 13044-520" },
             { coordinate: [-22.8216485, -47.0826997], legend: "<b>Praça do Côco</b><br>R. José Martins, 738 - Barão Geraldo, Campinas - SP, 13084-153" }
-            // { coordinate: [], legend: "<b></b><br>" },
-
         ]
         parks.forEach(park => {
             L.marker(park.coordinate).addTo(mymap).bindPopup(park.legend).openPopup();
