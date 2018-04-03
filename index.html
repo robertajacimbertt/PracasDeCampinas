@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="icon" href="./images/park_logo.svg"> -->
+    <link rel="icon" href="./images/park_logo_small.png" type="image/svg+xml" sizes="any">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-    <script src="./js/script.js"></script>
     <title>Praças de Campinas</title>
 </head>
 
@@ -37,23 +34,23 @@
         </header>
         <div id="content">
             <div id="description-div">
-                <h1 id="description">
-                    Selecione uma praça na lista para ver o endereço ou navegue direto no mapa
-                </h1>
+                <img src="./images/park_photo_index.JPG" />
+                <div id="description-index">
+                    <p>
+                        Seja Bem Vindo às Praças de Campinas!
+                    </p><br>
+                    <p>
+                        Nós temos como objetivo disponibilizar para você o mapeamento das principais praças da cidade de Campinas.<br> Abaixo você pode navegar pelo mapa e escolher a mais perto de você!
+                    </p>
+                </div>
             </div>
-            <div id="mapid"></div>
-            <script>
-                (function() {
-                    var map = document.getElementById("mapid");
-                    app = initMap({
-                        map: map
-                    });
-                })();
-            </script>
+            <div id="mapid">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1mER6v8XbXGiM1eoqZ8bIR4hYRxlmp2kr&hl=pt-PT"></iframe>
+            </div>
         </div>
         <footer>
             <div>
-                <img src="./images/park_logo.svg" alt="Imagem de Praça com árvore e banco" id="footer-icon">
+                <img src="./images/park_logo_gray.svg" alt="Imagem de Praça com árvore e banco" id="footer-icon">
                 <p id="footer-logo-name">Praças de Campinas</p>
                 <p id="licence">&copy; Open Source</p>
             </div>
